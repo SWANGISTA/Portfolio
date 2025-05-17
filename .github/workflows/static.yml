@@ -2,15 +2,20 @@
 name: Deploy static content to Pages
 
 on:
+  # Triggers the workflow on push to the main branch
   push:
     branches: ["main"]
+
+  # Allows you to run the workflow manually from the GitHub Actions tab
   workflow_dispatch:
 
+# Set permissions required for deployment
 permissions:
   contents: read
   pages: write
   id-token: write
 
+# Allow only one deployment at a time
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -21,18 +26,18 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload static content
         uses: actions/upload-pages-artifact@v3
         with:
-          # ✅ Point to your Portfolio directory
-          path: './Portfolio'
+          path: './Portfolio' # ✅ Make sure this matches your folder name
 
       - name: Deploy to GitHub Pages
         id: deployment
