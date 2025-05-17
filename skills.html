@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills | Clifford Maswanganye</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .spinning-nav {
+      position: fixed;
+      top: 50%;
+      right: 40px;
+      width: 300px;
+      height: 300px;
+      margin: 0;
+      transform: translateY(-50%);
+      animation: spin-circle 10s linear infinite;
+      animation-play-state: running;
+      transition: animation-play-state 0.3s ease;
+      z-index: 10; /* keep nav above other content */
+    }
+
+    .spinning-nav:hover {
+      animation-play-state: paused;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Skills</h1>
+  </header>
+
+  <main>
+    <div class="spinning-nav">
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <section class="skills">
+      <h2 class="green-text">Programming Languages</h2>
+      <p></p>
+      <ul>
+        <li>Java (Core, JEE)</li>
+        <li>Python</li>
+        <li>PHP</li>
+        <li>JavaScript</li>
+        <li>CSS</li>
+        <li>Kotlin</li>
+        <li>MySQL</li>
+      </ul>
+      <p></p>
+      <h2 class="green-text">Databases</h2>
+      <p></p>
+      <ul>
+        <li>MySQL</li>
+      </ul>
+      <p></p>
+      <h2 class="green-text">Tools & Frameworks</h2>
+      <p></p>
+      <ul>
+        <li>Spring Framework</li>
+        <li>Hibernate</li>
+        <li>Git & GitHub</li>
+        <li>NetBeans</li>
+        <li>Visual Studio Code</li>
+        <li>Android Studio</li>
+      </ul>
+      <h2 class="green-text">Soft Skills</h2>
+<ul>
+  <li>Problem Solving</li>
+  <li>Effective Communication</li>
+  <li>Team Collaboration</li>
+  <li>Adaptability</li>
+  <li>Time Management</li>
+  <li>Critical Thinking</li>
+  <li>Attention to Detail</li>
+  <li>Continuous Learning</li>
+</ul>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Clifford Maswanganye</p>
+  </footer>
+</body>
+</html>

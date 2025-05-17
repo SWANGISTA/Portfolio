@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education | Clifford Maswanganye</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .spinning-nav {
+          position: fixed;
+          top: 50%;
+          right: 40px;
+          width: 300px;
+          height: 300px;
+          margin: 0;
+          transform: translateY(-50%);
+          animation: spin-circle 10s linear infinite;
+          animation-play-state: running;
+          transition: animation-play-state 0.3s ease;
+          z-index: 10; /* keep nav above other content */
+        }
+    
+        .spinning-nav:hover {
+          animation-play-state: paused;
+        }
+      </style>
+</head>
+<body>
+    <script src="js/script.js"></script>
+    <header>
+        <h1>Education</h1>
+    </header>
+    <div class="spinning-nav">
+        <ul>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="index.html">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    <main>
+        <section class="education">
+            <h2 class="green-text">Tshwane University of Technology</h2>
+            <p><strong>Diploma in Science in Computer Science</strong></p>
+            <p>2021 - Present</p>
+            <ul>
+                <li>Focused on Java and backend development</li>
+                <li>Completed projects involving JEE and MySQL</li>
+                <li>Collaborated on team projects using Agile methodologies</li>
+            </ul>
+        </section>
+        <section class="education">
+            <h2 class="green-text">Meadowlands Secondary School</h2>
+            <p>2018 - 2019</p>
+            <ul>
+                <li>Focused on Science</li>
+                
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Clifford Maswanganye</p>
+    </footer>
+</body>
+</html>
