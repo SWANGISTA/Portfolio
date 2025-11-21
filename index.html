@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clifford Maswanganye | Backend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#home">CM<span class="dot">.</span></a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Clifford Maswanganye</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Backend Developer & Software Engineer</h2>
+                    <p class="hero-description">
+                        Specializing in building robust server-side applications with Java, Spring Boot,
+                        and modern backend technologies. Passionate about creating scalable solutions and exploring machine learning.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/swangista" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/clifford-maswanganye" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:clifford.maswanganye@example.com" class="social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span class="window-dot" style="background: #ff5f56;"></span>
+                            <span class="window-dot" style="background: #ffbd2e;"></span>
+                            <span class="window-dot" style="background: #27c93f;"></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="keyword">@RestController</span>
+<span class="keyword">public class</span> <span class="class-name">DeveloperController</span> {
+
+    <span class="keyword">@GetMapping</span>(<span class="string">"/api/developer"</span>)
+    <span class="keyword">public</span> Developer getInfo() {
+        <span class="keyword">return new</span> Developer()
+            .setName(<span class="string">"Clifford"</span>)
+            .setRole(<span class="string">"Backend Developer"</span>)
+            .addSkill(<span class="string">"Java"</span>)
+            .addSkill(<span class="string">"Spring Boot"</span>)
+            .addSkill(<span class="string">"MySQL"</span>)
+            .addSkill(<span class="string">"Machine Learning"</span>);
+    }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="profile-photo.jpg" alt="Clifford Maswanganye">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Backend Developer & Problem Solver</h3>
+                    <p>
+                        I'm a recent graduate with a <strong>Diploma in Computer Science</strong> from Tshwane University of Technology,
+                        specializing in backend development and software engineering. My journey in tech has been driven by a passion
+                        for building efficient, scalable server-side applications.
+                    </p>
+                    <p>
+                        Currently, I'm gaining hands-on experience as a <strong>Software Developer Intern at Gijima</strong>, where I work
+                        with enterprise technologies including Microsoft Power Apps, SharePoint, and backend systems. I've developed
+                        expertise in Java, Spring Boot, and modern backend architectures.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Education</h4>
+                            <p>Diploma in Computer Science</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-briefcase"></i>
+                            <h4>Experience</h4>
+                            <p>Software Developer Intern</p>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-code"></i>
+                            <h4>Projects</h4>
+                            <p>10+ Backend Applications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2024 - Present</div>
+                        <h3>Software Developer Intern</h3>
+                        <h4>Gijima</h4>
+                        <ul>
+                            <li>Developing business applications using Microsoft Power Apps and SharePoint</li>
+                            <li>Building backend services and APIs for enterprise solutions</li>
+                            <li>Collaborating with cross-functional teams on software development projects</li>
+                            <li>Implementing data integration and automation workflows</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Power Apps</span>
+                            <span class="tag">SharePoint</span>
+                            <span class="tag">Backend Development</span>
+                            <span class="tag">APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021 - 2024</div>
+                        <h3>Diploma in Computer Science</h3>
+                        <h4>Tshwane University of Technology</h4>
+                        <ul>
+                            <li>Focused on Java and backend development technologies</li>
+                            <li>Completed projects involving JEE and MySQL database management</li>
+                            <li>Collaborated on team projects using Agile methodologies</li>
+                            <li>Gained expertise in software engineering principles and best practices</li>
+                        </ul>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">JEE</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Agile</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-poll"></i>
+                    </div>
+                    <h3>OH Survey Application</h3>
+                    <p>
+                        Full-stack survey management system built with React frontend and Spring Boot backend.
+                        Implemented RESTful APIs, database design with MySQL, and user authentication.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Projects</h3>
+                    <p>
+                        Collection of machine learning projects including predictive models, data analysis,
+                        and classification algorithms. Implemented using Python, scikit-learn, and TensorFlow.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Data Analysis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Documentation
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Enterprise REST API</h3>
+                    <p>
+                        Scalable RESTful API built with Spring Boot featuring JWT authentication,
+                        role-based access control, and comprehensive error handling. Deployed on cloud infrastructure.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">JWT</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> API Docs
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Power Apps Solutions</h3>
+                    <p>
+                        Custom business applications developed using Microsoft Power Apps and SharePoint.
+                        Automated workflows and data management for enterprise clients.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Power Apps</span>
+                        <span class="tech-tag">SharePoint</span>
+                        <span class="tech-tag">Power Automate</span>
+                        <span class="tech-tag">Microsoft 365</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fas fa-info-circle"></i> Case Study
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>E-Commerce Backend</h3>
+                    <p>
+                        Complete backend system for e-commerce platform with payment integration,
+                        inventory management, and order processing. Built with Java and Spring Boot.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">Payment APIs</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Microservices Architecture</h3>
+                    <p>
+                        Distributed system using microservices architecture with Spring Cloud,
+                        service discovery, API gateway, and containerization with Docker.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Spring Cloud</span>
+                        <span class="tech-tag">Microservices</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-book"></i> Architecture
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-server"></i> Backend Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">RESTful APIs</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Technologies</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Git & GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Power Apps</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SharePoint</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 78%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Analysis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 72%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Frontend (Supporting)</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="soft-skills">
+                        <span class="soft-skill">Problem Solving</span>
+                        <span class="soft-skill">Team Collaboration</span>
+                        <span class="soft-skill">Agile Methodologies</span>
+                        <span class="soft-skill">Communication</span>
+                        <span class="soft-skill">Critical Thinking</span>
+                        <span class="soft-skill">Continuous Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-description">
+                I'm currently open to new opportunities and collaborations.
+                Whether you have a question or just want to say hi, feel free to reach out!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:clifford.maswanganye@example.com">clifford.maswanganye@example.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/swangista" target="_blank">github.com/swangista</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/clifford-maswanganye" target="_blank">linkedin.com/in/clifford-maswanganye</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Pretoria, South Africa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Clifford Maswanganye. All rights reserved.</p>
+                <p class="footer-tagline">Building robust backend solutions, one line of code at a time.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
